@@ -4,31 +4,19 @@
       "id": 1,
       "title": "Create new homepage banner",
       "details": "Lorem ipsum",
-      "complete": true
+      "complete": false
     },
     {
       "id": 2,
       "title": "Make marketing email",
       "details": "Lorem ipsum",
-      "complete": true
-    },
-    {
-      "id": 3,
-      "title": "find bug in code",
-      "details": "Lorem ipsum",
-      "complete": true
+      "complete": false
     },
     {
       "title": "make a new website",
       "details": "blather",
-      "complete": false,
-      "id": 4
-    },
-    {
-      "title": "call surren",
-      "details": "about Serrins Fisher",
       "complete": true,
-      "id": 5
+      "id": 4
     }
   ]
 }
