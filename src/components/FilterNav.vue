@@ -17,17 +17,17 @@
 
 <script>
 export default {
-    props: [`current`],
-    methods: {
-        updateFilter(by) {
-            this.$emit(`filterChange`, by)
-        }
+  props: ['current'],
+  methods: {
+    updateFilter(by) {
+      this.$emit('filterChange', by)
     }
+  }
 }
 </script>
 
 <style>
-.filter-nav button {
+  .filter-nav button {
     background: none;
     border: none;
     color: #bbb;

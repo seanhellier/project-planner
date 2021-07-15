@@ -4,19 +4,25 @@
       "id": 1,
       "title": "Create new homepage banner",
       "details": "test this",
-      "complete": false
+      "complete": true
     },
     {
       "id": 2,
       "title": "Make marketing email",
       "details": "this worked",
-      "complete": false
+      "complete": true
     },
     {
       "title": "make a new website",
       "details": "blather",
       "complete": true,
       "id": 4
+    },
+    {
+      "title": "learn vue",
+      "details": "hard as can be",
+      "complete": false,
+      "id": 5
     }
   ]
 }
