@@ -1,26 +1,39 @@
 <template>
   <form @submit.prevent="handleSubmit">
-      <label>Name</label>
-      <input type="text" v-model="title"  required>
-      <label>Details</label>
-      <textarea v-model="details" required></textarea>
-      <button>Add Project</button>
+    <label>Title</label>
+    <input type="text" v-model="title" required>
+    <label>Details</label>
+    <textarea v-model="details" required></textarea>
+    <button>Add Project</button>
   </form>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            title: ``,
-            details: ``,
-        }
-    },
-    methods: {
-        handleSubmit() {
-            console.log(this.title, this.details)
-        }
+  data() {
+    return {
+      title: '',
+      details: ''
     }
+  },
+  methods: {
+    handleSubmit() {
+      let project = {
+        title: this.title,
+        details: this.details,
+        complete: false
+      }
+      console.log(project)
+  
+     fetch('http://localhost:3000/projects', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(project)
+      }).then(() => {
+        this.$router.push('/')
+      }).catch(err => console.log(err))
+    }
+  }
 }
 </script>
 
